@@ -5,8 +5,6 @@ export class LegacyAppController {
   constructor(private legacyRouteHelper: LegacyRouteHelper) {}
 
   ajsShouldHandleRoute(): Boolean {
-    console.log('LegacyAppController:: from angularjs');
-    console.log(this.legacyRouteHelper);
     return this.legacyRouteHelper.ajsShouldHandleRoute();
   }
 }
