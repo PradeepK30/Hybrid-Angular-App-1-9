@@ -27,7 +27,7 @@ import { AppRoutingModule } from './routing/app-routing.module';
   providers: [],
   // VERY IMPORTANT to change this from `bootstrap` to `entryComponents`!
   // This is so we can manually bootstrap our app
-  entryComponents: [ AppComponent ]
+  
 })
 export class AppModule {
   constructor(private upgrade: UpgradeModule) { }
