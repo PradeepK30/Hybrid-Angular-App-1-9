@@ -12,11 +12,13 @@ function legacyRoutes($stateProvider, $urlRouterProvider) {
       url: '/hello-ajs',
       template: `
         <div class="comp ajs">
-          <h3>Hello from AngularJs Route</h3>
-          <a href="/hello-ng">Hello Ng</a>
+          <h3>Hello from AngularJS</h3>
+          <a href="/hello-ng">Go to Angular-9 Page</a>
         </div>
       `,
     });
+
+  $urlRouterProvider.when('/hello-ng', '/hello-ng');
 
   $urlRouterProvider.otherwise(($injector, $location) => {
     // If it's a valid Angular Route, Angular will handle it.

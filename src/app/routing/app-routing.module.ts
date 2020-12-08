@@ -8,8 +8,8 @@ import { routeHelper } from './route-helper';
 export class EmptyComponent {}
 
 const routes: Routes = [
-  { path: 'hello-ng', component: HelloNgComponent },
-
+  { path: 'hello-ng', component: HelloNgComponent },  
+  { path: '', pathMatch : 'full', redirectTo: '/hello-ng' },
   // Has to be last once all the other routes haven't matched
   { path: '**', component: EmptyComponent },
 ];
